@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hamish Croft | Portfolio</title>
-  <meta name="description" content="Portfolio and CV for Hamish Croft, Physics student and aspiring data scientist." />
+  <title>Hamish Croft | About</title>
+  <meta name="description" content="About Hamish Croft: physics student applying quantitative thinking to data science." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
@@ -15,152 +15,68 @@
   <div class="bg-shape bg-shape-b"></div>
 
   <header class="site-header">
-    <a class="brand" href="#top">HC</a>
+    <a class="brand" href="index.html">HC</a>
     <nav class="nav">
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#experience">Experience</a>
-      <a href="#education">Education</a>
-      <a href="#contact">Contact</a>
+      <a class="active" href="index.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="cv.html">CV</a>
     </nav>
   </header>
 
-  <main id="top">
+  <main>
     <section class="hero reveal">
       <p class="eyebrow">Aspiring Data Scientist</p>
       <h1>Hamish Croft</h1>
       <p class="hero-copy">
-        Physics undergraduate at the University of Nottingham with hands-on experience in quantitative analysis, statistical modelling, and Python-based problem solving.
+        Physics undergraduate at the University of Nottingham with hands-on experience in statistical modelling, simulation, and data-driven problem solving.
       </p>
       <div class="hero-signals">
         <div class="signal">
           <p class="signal-label">Focus</p>
-          <p class="signal-value">Data Science</p>
+          <p class="signal-value">Data Science Roles</p>
         </div>
         <div class="signal">
-          <p class="signal-label">Degree</p>
-          <p class="signal-value">BSc Physics</p>
+          <p class="signal-label">Core Stack</p>
+          <p class="signal-value">Python, SQL, Excel</p>
         </div>
         <div class="signal">
-          <p class="signal-label">Status</p>
-          <p class="signal-value">Open to Roles</p>
+          <p class="signal-label">Background</p>
+          <p class="signal-value">Physics + Analytics</p>
         </div>
       </div>
       <div class="hero-actions">
-        <a class="button primary" href="#projects">View Projects</a>
+        <a class="button primary" href="projects.html">View Projects</a>
+        <a class="button" href="cv.html">Open CV</a>
         <a class="button" href="https://github.com/hcroft-code" target="_blank" rel="noreferrer">GitHub</a>
-        <a class="button" href="#contact">Contact Me</a>
       </div>
     </section>
 
-    <section id="about" class="panel reveal">
-      <p class="section-kicker">01 / Profile</p>
-      <h2>About</h2>
+    <section class="panel reveal cover-letter">
+      <h2>Why I Am Applying For Data Science</h2>
       <p>
-        I am currently completing a BSc in Physics (predicted First Class Honours) and building practical data skills across Python, SQL, statistical analysis, and reporting. I enjoy turning complex datasets into clear insights and have applied this through simulation work, experimental data processing, and AI training tasks.
+        I am drawn to data science because it combines the parts of physics I enjoy most: framing the right question, working with uncertain data, and building models that are both useful and testable. Through my degree, I have learned to move from raw measurements to structured analysis and then communicate outcomes clearly.
       </p>
+      <p>
+        My projects have focused on computational modelling and quantitative evaluation, including diffusion-limited aggregation simulations and experimental data analysis. These experiences taught me to work carefully with assumptions, evaluate fit quality, and iterate quickly when initial approaches do not hold.
+      </p>
+      <p>
+        I am now looking to apply this foundation in a professional data science environment where I can contribute to real decision-making, continue developing as an analyst, and deliver work that has measurable impact.
+      </p>
+    </section>
+
+    <section class="panel reveal">
+      <h2>What I Can Bring</h2>
       <ul class="tag-list">
-        <li>Python</li>
-        <li>SQL</li>
-        <li>Statistical Modelling</li>
-        <li>Data Visualisation</li>
-        <li>Excel</li>
+        <li>Strong quantitative reasoning</li>
+        <li>Python workflow design</li>
+        <li>Statistical modelling and regression</li>
+        <li>Clear technical communication</li>
+        <li>Collaborative leadership experience</li>
       </ul>
-    </section>
-
-    <section id="projects" class="panel reveal">
-      <p class="section-kicker">02 / Project Archive</p>
-      <div class="section-title-row">
-        <h2>Featured Projects</h2>
-      </div>
-      <div class="grid">
-        <a class="card-link" href="projects/dla.html">
-          <article class="card">
-            <h3>Diffusion-Limited Aggregation</h3>
-            <p>Developed 2D and 3D DLA simulations with random walkers, sticking rules, and log-log fitting to estimate fractal dimensions.</p>
-            <p class="meta">Tech: Python, NumPy, Matplotlib</p>
-            <p class="meta card-cta">Read project details</p>
-          </article>
-        </a>
-        <a class="card-link" href="projects/thermal-lens.html">
-          <article class="card">
-            <h3>Inexpensive Thermal Lens</h3>
-            <p>Designed and tested a low-cost thermal lens experiment, then analysed measured data to compare model assumptions and fit quality.</p>
-            <p class="meta">Tech: Experimental Physics, Data Analysis, Reporting</p>
-            <p class="meta card-cta">Read project details</p>
-          </article>
-        </a>
-      </div>
-    </section>
-
-    <section id="experience" class="panel reveal">
-      <p class="section-kicker">03 / Career Timeline</p>
-      <h2>Experience</h2>
-      <div class="timeline">
-        <article>
-          <header>
-            <h3>DataAnnotation | Physics, Mathematics, and Python AI Trainer</h3>
-            <time>Feb 2025 - Present</time>
-          </header>
-          <p>Designed and validated complex tasks to test model robustness, improved understanding of data and model training workflows, and delivered high-quality analytical feedback under tight deadlines.</p>
-        </article>
-        <article>
-          <header>
-            <h3>Bartender | Corhampton Golf Club</h3>
-            <time>Apr 2025 - Present</time>
-          </header>
-          <p>Delivered high customer service standards, managed day-to-day bar operations, processed transactions accurately, and maintained a welcoming environment for members and guests.</p>
-        </article>
-        <article>
-          <header>
-            <h3>Coach | Cricket Hoppers & St Cross Symmondians CC</h3>
-            <time>Sep 2020 - Sep 2024</time>
-          </header>
-          <p>Planned structured coaching sessions for U5-U13 groups and adapted communication style to support technical development and confidence across varied age groups.</p>
-        </article>
-        <article>
-          <header>
-            <h3>President | University of Nottingham Men's Cricket Club</h3>
-            <time>Jun 2024 - Present</time>
-          </header>
-          <p>Lead club operations, events, and partnerships; drove expansion that increased paying membership from 94 to 150; and helped raise over £11,000 for Movember.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="education" class="panel reveal">
-      <p class="section-kicker">04 / Education</p>
-      <h2>Education</h2>
-      <div class="timeline">
-        <article>
-          <header>
-            <h3>University of Nottingham | BSc Physics</h3>
-            <time>Sep 2023 - Present</time>
-          </header>
-          <p>Predicted First Class Honours. Relevant modules include Computing for Physical Science, Scientific Computing, Quantitative Physics, Thermal and Statistical Physics, Solid State Physics, Semiconductor Physics, and Intermediate Experimental Physics.</p>
-        </article>
-        <article>
-          <header>
-            <h3>King Edward VI School, Southampton</h3>
-            <time>Sep 2016 - Aug 2023</time>
-          </header>
-          <p>A Levels: A, A, A (Mathematics, Physics, Chemistry). GCSEs include top grades in Mathematics, Physics, Economics, and Computer Science.</p>
-        </article>
-      </div>
-      <ul class="tag-list">
-        <li>Google Data Analytics Certificate (Completed)</li>
-        <li>EDT Routes into STEM</li>
-        <li>UK Driving Licence</li>
-      </ul>
-    </section>
-
-    <section id="contact" class="panel reveal">
-      <p class="section-kicker">05 / Contact</p>
-      <h2>Contact</h2>
-      <p>Email: <a class="text-link" href="mailto:H.croft@me.com">H.croft@me.com</a></p>
-      <p>Phone: <a class="text-link" href="tel:+447585032922">+44 7585 032922</a></p>
-      <p>LinkedIn: <a class="text-link" href="http://www.linkedin.com/in/hamishcroft" target="_blank" rel="noreferrer">/in/hamishcroft</a></p>
-      <p>GitHub: <a class="text-link" href="https://github.com/hcroft-code" target="_blank" rel="noreferrer">@hcroft-code</a></p>
+      <p class="contact-line">
+        Contact: <a class="text-link" href="mailto:H.croft@me.com">H.croft@me.com</a> |
+        <a class="text-link" href="http://www.linkedin.com/in/hamishcroft" target="_blank" rel="noreferrer">LinkedIn</a>
+      </p>
     </section>
   </main>
 

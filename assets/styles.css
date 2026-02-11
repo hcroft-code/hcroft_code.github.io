@@ -109,7 +109,8 @@ body::before {
   transition: border-color 220ms ease, color 220ms ease, background 220ms ease;
 }
 
-.nav a:hover {
+.nav a:hover,
+.nav a.active {
   color: var(--accent);
   border-color: rgba(88, 178, 255, 0.35);
   background: rgba(14, 26, 41, 0.72);
@@ -238,15 +239,6 @@ h3 {
   margin-bottom: 0.4rem;
 }
 
-.section-kicker {
-  margin: 0 0 0.35rem;
-  font-size: 0.74rem;
-  letter-spacing: 0.11em;
-  text-transform: uppercase;
-  color: var(--accent-2);
-  font-family: 'JetBrains Mono', monospace;
-}
-
 p {
   margin-top: 0;
 }
@@ -272,6 +264,15 @@ p {
   position: relative;
 }
 
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto auto 0;
+  width: 64px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent), transparent);
+}
+
 .card-link {
   text-decoration: none;
   color: inherit;
@@ -287,15 +288,6 @@ p {
   transform: translateY(-3px);
   box-shadow: 0 16px 34px rgba(0, 0, 0, 0.36);
   border-color: rgba(58, 160, 255, 0.5);
-}
-
-.card::before {
-  content: "";
-  position: absolute;
-  inset: 0 auto auto 0;
-  width: 64px;
-  height: 2px;
-  background: linear-gradient(90deg, var(--accent), transparent);
 }
 
 .meta {
@@ -345,6 +337,14 @@ p {
 .timeline time {
   color: var(--muted);
   font-size: 0.95rem;
+}
+
+.cover-letter p {
+  max-width: 75ch;
+}
+
+.contact-line {
+  margin-top: 1rem;
 }
 
 .text-link {
@@ -417,6 +417,7 @@ p {
 
   body {
     background: #fff;
+    color: #111;
   }
 
   .hero,
@@ -424,6 +425,7 @@ p {
     box-shadow: none;
     border: none;
     padding: 0;
+    background: #fff;
   }
 
   main {
