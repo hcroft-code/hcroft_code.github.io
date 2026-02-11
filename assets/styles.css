@@ -1,12 +1,13 @@
 :root {
-  --bg: #f4f4ef;
-  --surface: rgba(255, 255, 255, 0.72);
-  --surface-border: rgba(15, 15, 13, 0.08);
-  --text: #151513;
-  --muted: #59594f;
-  --accent: #0d7c66;
-  --accent-2: #dd5f2e;
-  --shadow: 0 18px 40px rgba(14, 18, 14, 0.12);
+  --bg: #0a1018;
+  --surface: rgba(13, 22, 34, 0.86);
+  --surface-strong: rgba(10, 18, 29, 0.96);
+  --surface-border: rgba(122, 160, 206, 0.2);
+  --text: #e8f0ff;
+  --muted: #9aaec7;
+  --accent: #3aa0ff;
+  --accent-2: #7be0c8;
+  --shadow: 0 22px 50px rgba(0, 0, 0, 0.45);
 }
 
 * {
@@ -21,9 +22,12 @@ body {
   margin: 0;
   min-height: 100vh;
   background:
-    radial-gradient(circle at 20% 15%, rgba(221, 95, 46, 0.15), transparent 40%),
-    radial-gradient(circle at 85% 10%, rgba(13, 124, 102, 0.16), transparent 35%),
+    linear-gradient(rgba(122, 160, 206, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(122, 160, 206, 0.07) 1px, transparent 1px),
+    radial-gradient(circle at 16% 8%, rgba(58, 160, 255, 0.22), transparent 36%),
+    radial-gradient(circle at 90% 12%, rgba(123, 224, 200, 0.14), transparent 38%),
     var(--bg);
+  background-size: 40px 40px, 40px 40px, auto, auto, auto;
   color: var(--text);
   font-family: 'Space Grotesk', sans-serif;
   line-height: 1.6;
@@ -43,7 +47,7 @@ body {
   height: 340px;
   top: 40px;
   left: -80px;
-  background: #f79370;
+  background: #2563c6;
 }
 
 .bg-shape-b {
@@ -51,7 +55,7 @@ body {
   height: 280px;
   right: -60px;
   bottom: 80px;
-  background: #5ab39f;
+  background: #1d8f79;
 }
 
 .site-header {
@@ -61,15 +65,16 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 6vw;
-  backdrop-filter: blur(10px);
-  background: rgba(244, 244, 239, 0.85);
-  border-bottom: 1px solid rgba(21, 21, 19, 0.08);
+  backdrop-filter: blur(12px);
+  background: rgba(8, 14, 22, 0.84);
+  border-bottom: 1px solid rgba(122, 160, 206, 0.2);
   z-index: 10;
 }
 
 .brand {
-  font-family: 'DM Serif Display', serif;
-  font-size: 1.5rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.2rem;
+  letter-spacing: 0.08em;
   text-decoration: none;
   color: var(--text);
 }
@@ -86,7 +91,7 @@ body {
 }
 
 .nav a:hover {
-  color: var(--text);
+  color: var(--accent);
 }
 
 main {
@@ -106,8 +111,9 @@ main {
 }
 
 .hero h1 {
-  font-family: 'DM Serif Display', serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: clamp(2.2rem, 6vw, 4.1rem);
+  letter-spacing: -0.02em;
   line-height: 1;
   margin: 0 0 0.9rem;
 }
@@ -141,22 +147,26 @@ main {
   border-radius: 10px;
   color: var(--text);
   font-weight: 500;
+  background: rgba(18, 30, 45, 0.82);
 }
 
 .button.primary {
   background: var(--accent);
   border-color: var(--accent);
-  color: #f5fffb;
+  color: #061525;
+  box-shadow: 0 8px 26px rgba(58, 160, 255, 0.4);
 }
 
 .button:hover {
-  transform: translateY(-1px);
+  transform: translateY(-2px);
+  border-color: rgba(122, 160, 206, 0.42);
 }
 
 h2 {
   margin-top: 0;
-  font-family: 'DM Serif Display', serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 1.9rem;
+  letter-spacing: -0.01em;
 }
 
 h3 {
@@ -184,7 +194,7 @@ p {
   border: 1px solid var(--surface-border);
   border-radius: 14px;
   padding: 1rem;
-  background: rgba(255, 255, 255, 0.7);
+  background: var(--surface-strong);
 }
 
 .card-link {
@@ -200,7 +210,8 @@ p {
 
 .card-link:hover .card {
   transform: translateY(-3px);
-  box-shadow: 0 12px 28px rgba(14, 18, 14, 0.14);
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.36);
+  border-color: rgba(58, 160, 255, 0.5);
 }
 
 .meta {
@@ -227,13 +238,13 @@ p {
   border: 1px solid var(--surface-border);
   border-radius: 999px;
   padding: 0.32rem 0.78rem;
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(15, 25, 37, 0.8);
   font-size: 0.9rem;
 }
 
 .timeline article {
   padding: 0.75rem 0;
-  border-bottom: 1px dashed rgba(21, 21, 19, 0.15);
+  border-bottom: 1px dashed rgba(122, 160, 206, 0.26);
 }
 
 .timeline article:last-child {
@@ -253,8 +264,12 @@ p {
 }
 
 .text-link {
-  color: var(--accent-2);
+  color: var(--accent);
   text-underline-offset: 3px;
+}
+
+.text-link:hover {
+  color: var(--accent-2);
 }
 
 .project-body {
