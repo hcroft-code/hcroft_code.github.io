@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diffusion-Limited Aggregation | Hamish Croft</title>
+  <meta name="description" content="Diffusion-limited aggregation project by Hamish Croft." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/styles.css" />
+</head>
+<body>
+  <div class="bg-shape bg-shape-a"></div>
+  <div class="bg-shape bg-shape-b"></div>
+
+  <header class="site-header">
+    <a class="brand" href="../index.html">HC</a>
+    <nav class="nav">
+      <a href="../index.html#projects">Projects</a>
+      <a href="../index.html#contact">Contact</a>
+      <a href="https://github.com/hcroft-code" target="_blank" rel="noreferrer">GitHub</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="panel reveal in-view">
+      <p class="back-link"><a class="text-link" href="../index.html#projects">Back to portfolio</a></p>
+      <h1>Diffusion-Limited Aggregation</h1>
+      <p class="hero-copy">A computational physics project modelling 2D and 3D diffusion-limited aggregation (DLA) to estimate fractal dimension from simulated clusters.</p>
+
+      <div class="project-body">
+        <h3>What I Built</h3>
+        <ul>
+          <li>Implemented a 2D lattice-based DLA simulation with random walkers, adjacency sticking rules, and kill-radius logic.</li>
+          <li>Extended the approach to 3D with configurable seed geometry, multiple runs, and averaged scaling analysis.</li>
+          <li>Used log(N) vs log(r) fitting windows to estimate fractal dimension from aggregate growth.</li>
+        </ul>
+
+        <h3>Technical Highlights</h3>
+        <ul>
+          <li>Python + NumPy for simulation and counting occupied sites across radii.</li>
+          <li>Matplotlib visualisations for cluster structure and scaling plots.</li>
+          <li>Parameter controls for lattice size, particle count, spawn offset, kill factor, and run count.</li>
+        </ul>
+
+        <h3>Report PDF</h3>
+        <p>The PDF below contains figures and outputs from the project.</p>
+        <iframe class="report-frame" src="../assets/reports/dla_figures.pdf" title="DLA Figures PDF"></iframe>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
